@@ -1,5 +1,5 @@
 en:
-  not_string       : 'Value is not a String'
+  not_string       : "Value is not a String"
   empty_string     : 'Value is empty'
   negative_integer : 'Value must be a positive'
-  mo integer       : 'Value is not integer'
+  no_integer       : 'Value is not integer'
