@@ -6,10 +6,14 @@ class Author
   def initialize(name:, biography: '')
     @name       = name
     @biography  = biography
-    valid_string?(name)
+    validtion
   end
 
   def to_s
     "#{name}, #{biography}"
+  end
+
+  def validtion
+    string?(@name)
   end
 end

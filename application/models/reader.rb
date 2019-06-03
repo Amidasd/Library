@@ -9,11 +9,15 @@ class Reader
     @city   = city
     @street = street
     @house  = house
-    valid_string?(name, email, city, street)
-    valid_positive_integer?(house)
+    validtion
   end
 
   def to_s
     "#{name}, #{email}, #{city}, #{street}. #{house}"
+  end
+
+  def validtion
+    string?(@name, @email, @city, @street)
+    negative?(@house)
   end
 end
